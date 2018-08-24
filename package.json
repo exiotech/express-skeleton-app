@@ -1,0 +1,72 @@
+{
+  "name": "expressjs-skeleton-project",
+  "version": "1.0.0",
+  "description": "Expressjs Skeleton Project",
+  "main": "./bin/www",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development nodemon ./bin/www --exec babel-node",
+    "build": "rm -rf build && babel ./src -d build",
+    "server": "node ./bin/www",
+    "seed": "babel-node ./src/db/seed"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "celebrate": "^8.0.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~3.1.0",
+    "express": "~4.16.3",
+    "express-jwt": "^5.3.1",
+    "faker": "^4.1.0",
+    "express-winston": "^3.0.0",
+    "http-errors": "~1.7.0",
+    "joi": "^13.6.0",
+    "joi-objectid": "^2.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.9",
+    "mongoose-delete": "^0.4.0",
+    "mongoose-paginate": "git+https://github.com/andhovesyan/mongoose-paginate.git",
+    "mongoose-schema-extend": "git+https://github.com/kennylmay/mongoose-schema-extend.git",
+    "mongoose-timestamp": "^0.6.0",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-alias": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "cross-env": "^5.2.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.3",
+    "npm": "^6.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/andhovesyan/express-skeleton-app.git"
+  },
+  "keywords": [
+    "express",
+    "expressjs",
+    "node",
+    "nodejs",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "Andranik Hovesyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andhovesyan/express-skeleton-app/issues"
+  },
+  "homepage": "https://github.com/andhovesyan/express-skeleton-app#readme"
+}

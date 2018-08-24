@@ -1,0 +1,27 @@
+{
+  "presets": ["env", "stage-0"],
+  "plugins": [
+    ["module-alias", [{
+      "src": "./src/app/const",
+      "expose": "const"
+    }, {
+      "src": "./src/app/controllers",
+      "expose": "controllers"
+    }, {
+      "src": "./src/app/models",
+      "expose": "model"
+    }, {
+      "src": "./src/app/services",
+      "expose": "services"
+    }, {
+      "src": "./src/app/validators",
+      "expose": "validators"
+    }, {
+      "src": "./src/lib",
+      "expose": "lib"
+    }, {
+      "src": "./src/config",
+      "expose": "config"
+    }]]
+  ]
+}
